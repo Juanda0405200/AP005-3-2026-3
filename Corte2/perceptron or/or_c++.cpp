@@ -7,7 +7,7 @@ const int LED_X1 = 25;
 const int LED_X2 = 26;
 const int LED_Y = 27;
 
-// Tabla de entrenamiento AND
+// Tabla de entrenamiento or
 const int inputs[4][2] = {
 {0, 0}, {0, 1}, {1, 0}, {1, 1}
 };
@@ -144,7 +144,7 @@ void setup() {
  pinMode(LED_Y, OUTPUT);
  showVisualState(0, 0, 0);
 
- Serial.println("PERCEPTRON AND: ANTES DEL ENTRENAMIENTO");
+ Serial.println("PERCEPTRON or: ANTES DEL ENTRENAMIENTO");
  evaluate(true, 1000);
  delay(2000);
  trainPerceptron();
