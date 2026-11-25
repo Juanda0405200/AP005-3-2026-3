@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>proyectos progra aplicada</title>
+<style>
+  :root {
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    --bg: #f4f7f6;
+    --surface: #ffffff;
+    --text: #1d2b2a;
+    --muted: #4c5f5d;
+    --accent: #0a7c6a;
+    --border: #d3dfdc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0f1716;
+      --surface: #172221;
+      --text: #e6f0ee;
+      --muted: #a3b8b4;
+      --accent: #3fd0b8;
+      --border: #2a3b39;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0f1716;
+    --surface: #172221;
+    --text: #e6f0ee;
+    --muted: #a3b8b4;
+    --accent: #3fd0b8;
+    --border: #2a3b39;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.7;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+  h1 { font-size: 1.9rem; line-height: 1.25; color: var(--accent); margin-top: 0; }
+  h2 { font-size: 1.5rem; margin-top: 2.5rem; color: var(--accent); }
+  p { color: var(--muted); }
+  section, .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-top: 1rem;
+  }
+  ul.ejemplos { color: var(--muted); padding-left: 1.2rem; }
+  ul.ejemplos li { margin-bottom: .5rem; }
+  ul.ejemplos strong { color: var(--text); }
+  ol.proyectos { padding-left: 1.5rem; font-size: 1.1rem; }
+  ol.proyectos li { padding: .35rem 0; }
+  ol.proyectos a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  ol.proyectos a:hover { text-decoration: underline; }
+  figure { margin: 1.5rem 0 0; text-align: center; }
+  figure img { width: 100%; max-width: 560px; height: auto; border-radius: 12px; display: block; margin: 0 auto; }
+  figure a { display: block; transition: opacity .2s; }
+  figure a:hover { opacity: .8; }
+  figcaption { color: var(--muted); font-size: .9rem; margin-top: .5rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>¿Qué es la programación aplicada en electrónica?</h1>
+
+  <section>
+    <p>
+      La programación aplicada en electrónica consiste en escribir código que controla,
+      lee o comunica componentes y circuitos físicos. En lugar de producir solo
+      programas para una pantalla, el código interactúa con el mundo real: enciende
+      LEDs, mide temperatura, mueve motores o envía datos por internet. Normalmente
+      se ejecuta en microcontroladores como Arduino, ESP32 o Raspberry Pi Pico.
+    </p>
+    <p>Ejemplos de cómo se usa:</p>
+    <ul class="ejemplos">
+      <li><strong>Lectura de sensores:</strong> programar un ESP32 para leer la temperatura y la humedad de un sensor DHT22 y mostrarlas en una pantalla.</li>
+      <li><strong>Control de actuadores:</strong> activar un relé o un motor cuando un sensor detecta movimiento o poca luz.</li>
+      <li><strong>Internet de las cosas (IoT):</strong> enviar los datos medidos por WiFi a una plataforma en la nube para verlos desde el celular.</li>
+      <li><strong>Automatización:</strong> un sistema de riego que se activa solo cuando la humedad del suelo baja de cierto valor.</li>
+      <li><strong>Análisis de datos:</strong> guardar las mediciones de los sensores y analizarlas con Python para encontrar patrones o predecir fallas.</li>
+    </ul>
+  </section>
+
+  <figure>
+      <img src="Esp32.jpg" alt="Chip electrónico sobre una placa de circuitos con pistas doradas">
+      <figcaption>Chip electrónico sobre una placa de circuitos.</figcaption>
+  </figure>
+
+  <h2>Mis proyectos</h2>
+
+  <div class="card">
+    <ol class="proyectos">
+      <li><a href="https://github.com/Juanda0405200/AP005-3-2026-3" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a
+href="https://drive.google.com/drive/folders/1zT6DPEYWk1Ixiw6VuFKTxqlIcWZb_RPX"target="_blank" rel="noopener">codigos comentados</a></li>
+      <li><a href="https://wokwi.com/projects/480367930768712705" target="_blank" rel="noopener">perceptron and</a></li>
+      <li><a href="https://wokwi.com/projects/481539565284151297" target="_blank" rel="noopener">perceptor or</a></li>
+      <li><a href="esp-perceptor.html">perceptor 3 entradas</a></li>
+
+    </ol>
+  </div>
+</main>
+</body>
+</html>
